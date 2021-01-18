@@ -48,6 +48,6 @@ code {
 .box2 {
     float: left;
     padding-right: 20px;
-    width: 25%;
+    width: 50%;
     box-sizing: border-box;
 }

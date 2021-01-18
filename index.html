@@ -14,37 +14,161 @@
     <h1>JavaScript FreeCodeCamp</h1>
 
     <div class="container">
+        <h2>Variables</h2>
         <div class="box1">
-            <h2>Comment Your JavaScript Code</h2>
+            <h3>Comment Your JavaScript Code</h3>
             <ol>
                 <li>In-line //</li>
                 <li>Mulit-line /**/</li>
             </ol>
         </div>
         <div class="box1">
-            <h2>Declare JavaScript Variables</h2>
+            <h3>Declare JavaScript Variables</h3>
             <p>In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.</p>
             <p><em>Variables</em> allow computers to store and manipulate data in a dynamic fashion. They do this by using a "label" to point to the data rather than using the data itself. Any of the eight data types may be stored in a variable.</p>
         </div>
         <div class="box1">
-            <h2>Storing Values with the Assignment Operator</h2>
+            <h3>Storing Values with the Assignment Operator</h3>
             <p>In JavaScript, you can store a value in a variable with the assignment operator (=).</p>
             <p>After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.</p>
             <p><code>var myVar; myVar = 5; var myNum; myNum = myVar</code></p>
         </div>
-        <h2>Initializing Variables with the Assignment Operator</h2>
+        <h3>Initializing Variables with the Assignment Operator</h3>
         <p>It is common to initialize a variable to an initial value in the same line as it is declared.</p>
         <p><code>var myVar = 10;</code></p>
         <div class="clearfix"></div>
         <hr>
 
         <div class="box2">
-            <h2>Understanding Uninitialized Variables</h2>
+            <h3>Understanding Uninitialized Variables</h3>
             <p>When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined
                 variable, you will get a literal string of "undefined".</p>
         </div>
+        <div class="box2">
+            <h3>Understanding Case Sensitivity in Variables</h3>
+            <p>In JavaScript all variables and function names are case sensitive. This means that capitalization matters. MYVAR is not the same as MyVar nor myvar. It is possible to have multiple distinct variables with the same name but different casing.
+                It is strongly recommended that for the sake of clarity, you do not use this language feature.</p>
+            <p><code>var someVariable;</code></p>
+        </div>
         <div class="clearfix"></div>
         <hr>
+
+        <h2>Numbers</h2>
+        <div class="box1">
+            <h3>Add two Numbers</h3>
+            Number is a data type in JavaScript which represents numeric data.
+            <p><code>myVar = 5 + 10;</code> <small>//assigned 15</small></p>
+        </div>
+        <div class="box1">
+            <h3>Subtracting two Numbers</h3>
+            Number is a data type in JavaScript which represents numeric data.
+            <p><code>myVar = 5 - 10;</code> <small>//assigned 5</small></p>
+        </div>
+        <div class="box1">
+            <h3>Multiply two Numbers</h3>
+            Number is a data type in JavaScript which represents numeric data.
+            <p><code>myVar = 5 * 10;</code> <small>//assigned 50</small></p>
+        </div>
+        <div class="box1">
+            <h3>Divide two Numbers</h3>
+            Number is a data type in JavaScript which represents numeric data.
+            <p><code>myVar = 50 / 10;</code> <small>//assigned 5</small></p>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <h2>Incrementing/Decrementing</h2>
+        <div class="box2">
+            <h3>Incrementing a Number</h3>
+            <p>You can easily increment or add one to a variable with the ++ operator.</p>
+            <p><code>i++;</code> or <code>i = i + 1</code></p>
+        </div>
+        <div class="box2">
+            <h3>Decrementing a Number</h3>
+            <p>You can easily decrement or decrease a variable by one with the -- operator.</p>
+            <p><code>i--;</code> or <code>i = i - 1</code></p>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+
+        <div class="box1">
+            <h3>Decimal Numbers</h3>
+            <p>We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or float</p>
+            <p><code>5.7</code></p>
+        </div>
+        <div class="box1">
+            <h3>Multiply Two Decimals with JavaScript</h3>
+            <p>In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.</p>
+            <p><code>var product = 2.0 * 9.1;</code></p>
+        </div>
+        <div class="box1">
+            <h3>Divide One Decimal by Another</h3>
+            <p>Now let's divide one decimal by another.</p>
+            <p><code>var product = 2.0 * 9.1;</code></p>
+        </div>
+        <div class="box1">
+            <h3>Finding a Remainder</h3>
+            <p>The remainder operator % gives the remainder of the division of two numbers.</p>
+            <p><code>5 % 2 = 1</code> or <code>48 % 2 = 0</code></p>
+            <p><small>The remainder operator is sometimes incorrectly referred to as the "modulus" operator. It is very similar to modulus, but does not work properly with negative numbers.</small></p>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+
+        <h2>Compound Assignments</h2>
+        <div class="box1">
+            <h3>Augmented Addition</h3>
+            <p>In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:</p>
+            <p><code>myVar = myVar + 5;</code> then <code>myVar += 5;</code> <small>//Returns 6</small></p>
+        </div>
+        <div class="box1">
+            <h3>Augmented Subtractions</h3>
+            <p>Like the += operator, -= subtracts a number from a variable.</p>
+            <p><code>myVar = myVar - 5;</code> then <code>myVar -= 5;</code></p>
+        </div>
+        <div class="box1">
+            <h3>Multiplication Subtractions</h3>
+            <p>The *= operator multiplies a variable by a number.</p>
+            <p><code>myVar = myVar * 5;</code> then <code>myVar *= 5;</code></p>
+        </div>
+        <div class="box1">
+            <h3>Division Subtractions</h3>
+            <p>The /= operator divides a variable by another number.</p>
+            <p><code>myVar = myVar / 5;</code> then <code>myVar /= 5;</code></p>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+        <h2>String</h2>
+        <div class="box1">
+            <h3>Declare String Variables</h3>
+            <p>"your name" is called a string literal. It is a string because it is a series of zero or more characters enclosed in single or double quotes.</p>
+        </div>
+        <div class="box1">
+            <h3>Escaping Literal Quotes in Strings</h3>
+            <p>You can escape a quote from considering it as an end of string quote by placing a backslash <code>(\)</code> in front of the quote</p>
+            <p><code>var sampleStr = "Alan said, \"Peter is learning JavaScript\".";</code></p>
+        </div>
+        <div class="box1">
+            <h3>Quoting Strings with Single Quotes</h3>
+            <p>String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote. Unlike some other programming languages, single and double quotes work the same in JavaScript.</p>
+            <p><code>doubleQuoteStr = "This is a string"; </code> & <code>singleQuoteStr = 'This is also a string';</code></p>
+        </div>
+        <div class="box1">
+            <h3>Escape Sequences in Strings</h3>
+            <p>Quotes are not the only characters that can be escaped inside a string.</p>
+            <ul>
+                <li><code>\'	single quote</code>></li>
+                <li><code>\"	double quote</code>></li>
+                <li><code>\\	backslash</code>></li>
+                <li><code>\n	newline</code>></li>
+                <li><code>\r	carriage return</code>></li>
+                <li><code>\t	tab</code>></li>
+                <li><code>\b	word boundary</code>></li>
+                <li><code>\f	form feed</code>></li>
+            </ul>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
 
     </div>
     <!-- ./container -->
@@ -53,7 +177,7 @@
     <!-- Footer -->
     <footer>
         <section class="reference ">
-            <p><cite>JavaScript - Free CodeCamp</cite> Online Course sponsored by FreeCodeCamp <a href="https://www.freecodecamp.org/learn" target="_blank "> Online Site</a></p>
+            <p><cite>JavaScript - Free CodeCamp</cite> Online Course sponsored by FreeCodeCamp <a href="https://www.freecodecamp.org/learn " target="_blank "> Online Site</a></p>
         </section>
         <section class="trademark ">
             <p>Designed by &copy;<a href="https://github.com/theTrainMan " target="_blank ">theTrainMan</a> 2021</p>
@@ -61,9 +185,9 @@
     </footer>
     <!-- ./footer -->
 
-    <div style="height: 350px;"></div>
+    <div style="height: 350px; "></div>
 
-    <script src="main.js"></script>
+    <script src="main.js "></script>
 </body>
 
 </html>
