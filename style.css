@@ -20,6 +20,12 @@ em {
     color: red;
 }
 
+code {
+    font-weight: 800;
+    text-decoration: underline;
+    color: #0400ff;
+}
+
 .clearfix {
     clear: both;
 }
@@ -34,6 +40,14 @@ em {
 
 .box1 {
     float: left;
-    width: 33.3333%;
+    padding-right: 20px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.box2 {
+    float: left;
+    padding-right: 20px;
+    width: 25%;
     box-sizing: border-box;
 }

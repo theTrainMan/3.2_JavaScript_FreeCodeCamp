@@ -29,16 +29,30 @@
         <div class="box1">
             <h2>Storing Values with the Assignment Operator</h2>
             <p>In JavaScript, you can store a value in a variable with the assignment operator (=).</p>
+            <p>After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.</p>
+            <p><code>var myVar; myVar = 5; var myNum; myNum = myVar</code></p>
         </div>
-
+        <h2>Initializing Variables with the Assignment Operator</h2>
+        <p>It is common to initialize a variable to an initial value in the same line as it is declared.</p>
+        <p><code>var myVar = 10;</code></p>
         <div class="clearfix"></div>
+        <hr>
+
+        <div class="box2">
+            <h2>Understanding Uninitialized Variables</h2>
+            <p>When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined
+                variable, you will get a literal string of "undefined".</p>
+        </div>
+        <div class="clearfix"></div>
+        <hr>
+
     </div>
     <!-- ./container -->
 
 
 
 
-
+    <div style="height: 350px;"></div>
 
     <script src="main.js"></script>
 </body>
