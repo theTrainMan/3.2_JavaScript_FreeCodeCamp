@@ -314,6 +314,76 @@
         <hr>
 
         <h2>Functions</h2>
+        <div class="box1">
+            <h3>Write Reusable JavaScript with Functions</h3>
+            <p>In JavaScript, we can divide up our code into reusable parts called functions.</p>
+            <p>You can call or invoke this function by using its name followed by parentheses, like this: functionName(); Each time the function is called it will print out the message "Hello World" on the dev console. All of the code between the curly braces
+                will be executed every time the function is called</p>
+            <p><code>function functionName() {
+                console.log("Hello World"); <br>
+              }</code></p>
+        </div>
+        <div class="box1">
+            <h3>Passing Values to Functions with Arguments</h3>
+            <p>Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input
+                (or "passed") into a function when it is called are known as arguments.</p>
+            <p><code>function testFun(param1, param2) {
+                console.log(param1, param2);
+              }</code></p>
+        </div>
+        <div class="box1">
+            <h3>Global Scope and Functions</h3>
+            <p>In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.</p>
+            <p>Variables which are used without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with
+                var.
+            </p>
+        </div>
+        <div class="box1">
+            <h3>Local Scope and Functions</h3>
+            <p>Variables which are declared within a function, as well as the function parameters have local scope. That means, they are only visible within that function</p>
+            <p><code>function myTest() { <br>
+                var loc = "foo"; <br>
+                console.log(loc); <br>
+              }
+              myTest(); // logs "foo" <br>
+              console.log(loc); // loc is not defined</code></p>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
+        <div class="box1">
+            <h3>Global vs. Local Scope in Functions</h3>
+            <p>It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.</p>
+            <p><code>var someVar = "Hat"; <br>
+                function myFun() { <br>
+                  var someVar = "Head"; <br>
+                  return someVar; <br>
+                }</code></p>
+        </div>
+        <div class="box1">
+            <h3>Return a Value from a Function with Return</h3>
+            <p>We can pass values into a function with arguments. You can use a return statement to send a value back out of a function</p>
+            <p><code>function plusThree(num) { <br>
+                return num + 3; <br>
+              } <br>
+              var answer = plusThree(5); // 8</code></p>
+        </div>
+        <div class="box1">
+            <h3>Understanding Undefined Value returned from a Function</h3>
+            <p>A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined</p>
+            <p><code>var sum = 0; <br>
+                function addSum(num) { <br>
+                  sum = sum + num; <br>
+                } <br>
+                addSum(3); // sum will be modified but returned value is undefined
+                </code></p>
+        </div>
+        <div class="box1">
+            <h3>Assignment with a Returned Value</h3>
+            <p>If you'll recall from our discussion of Storing Values with the Assignment Operator, everything to the right of the equal sign is resolved before the value is assigned. This means we can take the return value of a function and assign it to
+                a variable.</p>
+
+        </div>
         <div class=" clearfix "></div>
         <hr>
 
