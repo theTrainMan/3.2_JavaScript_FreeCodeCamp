@@ -169,6 +169,103 @@
         <div class=" clearfix "></div>
         <hr>
 
+        <div class="box1">
+            <h3>Concatenating Strings</h3>
+            <p>In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.</p>
+            <p><code>var ourStr = "I come first. " + "I come second.";</code></p>
+            <p><code>var ourStr = "I come first. ";<br>
+                ourStr += "I come second.";</code></p>
+        </div>
+        <div class="box1">
+            <h3>Constructing Strings with Variables</h3>
+            <p>Sometimes you will need to build a string, Mad Libs style. By using the concatenation operator (+), you can insert one or more variables into a string you're building.</p>
+            <p><code>var ourName = "freeCodeCamp";<br>
+                var ourStr = "Hello, our name is " + ourName + ", how are you?";</code></p>
+        </div>
+        <div class="box1">
+            <h3>Appending Variables to Strings</h3>
+            <p>Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.</p>
+            <p><code>var anAdjective = "awesome!";<br>
+                var ourStr = "freeCodeCamp is ";<br>
+                ourStr += anAdjective;</code></p>
+        </div>
+        <div class="box1">
+            <h3>Find the Length of a String</h3>
+            <p>You can find the length of a String value by writing .length after the string variable or string literal.</p>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
+        <div class="box1">
+            <h3>Bracket Notation</h3>
+            <p>Bracket notation is a way to get a character at a specific index within a string.</p>
+            <p><code>var firstName = "Charles";<br>
+                var firstLetter = firstName[0];</code></p>
+        </div>
+        <div class="box1">
+            <h3>String Immutability</h3>
+            <p>In JavaScript, String values are immutable, which means that they cannot be altered once created.</p>
+            <p><code>var myStr = "Bob";<br>
+                    myStr = "Job";</code></p>
+        </div>
+        <div class="box1">
+            <h3>Bracket Notation to Find the Nth Character</h3>
+            <p>You can also use bracket notation to get the character at other positions within a string.</p>
+            <p><code>var firstName = "Ada";<br>
+                var secondLetterOfFirstName = firstName[1];</code></p>
+        </div>
+        <div class="box1">
+            <h3>Bracket Notation to Find the Last Character</h3>
+            <p>In order to get the last letter of a string, you can subtract one from the string's length.</p>
+            <p><code>var firstName = "Charles";<br>
+                var lastLetter = firstName[firstName.length - 1];</code></p>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
+        <div class="box2">
+            <h3>Bracket Notation to Find the Nth-to-Last Character</h3>
+            <p>You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.</p>
+        </div>
+        <div class="box2">
+            <h3>Word Blanks</h3>
+            <p>Consider this sentence - "It was really ____, and we ____ ourselves ____". This sentence has three missing pieces- an adjective, a verb and an adverb, and we can add words of our choice to complete it.</p>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
+        <h2>Arrays</h2>
+        <div class="box1">
+            <h3>Store Multiple Values in one Variable</h3>
+            <p>With JavaScript array variables, we can store several pieces of data in one place. You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:</p>
+            <p><code>var sandwich = ["peanut butter", "jelly", "bread"]</code></p>
+        </div>
+        <div class="box1">
+            <h3>Nest one Array within Another Array</h3>
+            <p>You can also nest arrays within other arrays</p>
+            <p><code>[["Bulls", 23], ["White Sox", 45]]</code></p>
+        </div>
+        <div class="box1">
+            <h3>Access Array Data with Indexes</h3>
+            <p>We can access the data inside arrays using indexes.</p>
+            <p><code>var array = [50,60,70];<br>
+                array[0]; // equals 50 <br>
+                var data = array[1]// equals 60</code></p>
+        </div>
+        <div class="box1">
+            <h3>Modify Array Data With Indexes</h3>
+            <p>Unlike strings, the entries of arrays are mutable and can be changed freely</p>
+            <p><code>var ourArray = [50,40,30];<br>
+                ourArray[0] = 15;</code></p>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+        <div class="box1">
+            <h3>Access Multi-Dimensional Arrays With Indexes</h3>
+        </div>
+        <div class=" clearfix "></div>
+        <hr>
+
 
     </div>
     <!-- ./container -->
